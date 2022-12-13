@@ -1,7 +1,7 @@
 # Write_Read_EEPROM
 Uso:
   - Se descarga el el .zip de este repositorio.
-  - Se descomprime este .zip y se abre una terminal en la carpeta descomprimida.
+  - Se descomprime este .zip y se abre una terminal dentro de la carpeta descomprimida.
   - En la terminal se ejecuta *python3 eeprom.py <terminación de número de serie>*
   
 *Ejemplo de uso:*
