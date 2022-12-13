@@ -48,10 +48,10 @@ try:
                         n+=1
                     i+=1
                 
-                print("\x1b[1;32m"+"Numero de serie escrito en memoria EEPROM...\n")
+                print("\x1b[1;32m"+"Número de serie escrito en memoria EEPROM...\n")
                 num_version = "vE6.14"
                 i = 100
-                print("\x1b[1;32m"+"Procedemos a escribir numero de versión en memoria EEPROM...")
+                print("\x1b[1;32m"+"Procedemos a escribir número de versión en memoria EEPROM...")
                 sleep(0.010)
 
                 for c in range(6):
@@ -69,7 +69,7 @@ try:
                     sleep(0.010)
                     valor = subprocess.run(f"i2cset -y 1 0x50 {str(i_hex)} {str(hex(ord(num_version[c])))}", stdout=subprocess.PIPE, shell=True)
                     i+=1
-                print("\x1b[1;32m"+"Numero de versión escrito en memoria EEPROM...")
+                print("\x1b[1;32m"+"Número de versión escrito en memoria EEPROM...")
             else:
                 print("\x1b[1;33m"+"ERROR: No se ha introducido el número de serie")
                 
