@@ -1,7 +1,7 @@
 ########################################################################
 # Autor: Ernesto Lomar
 # Fecha de creación: 12/12/2022
-# Ultima modificación: 13/12/2022
+# Ultima modificación: 12/12/2024
 #
 # Script para insertar número de serie y número de versión en tablilla
 ########################################################################
@@ -26,7 +26,7 @@ try:
                 num_tablilla = sys.argv[1]
                 print("\x1b[1;32m"+"Dato ingresado: ", num_tablilla)
                 sleep(0.010)
-                numero_de_serie_por_defecto = "Ix18844211"
+                numero_de_serie_por_defecto = "Ix20241200"
                 i = 0
                 n = 0
                 print("\x1b[1;32m"+"Procedemos a escribir número de serie en memoria EEPROM...")
@@ -54,7 +54,7 @@ try:
                 print("\x1b[1;32m"+"Procedemos a escribir número de versión en memoria EEPROM...")
                 sleep(0.010)
 
-                for c in range(6):
+                for c in range(7):
                     i_hex = hex(i)
                     if c == 6:
                             valor = subprocess.run(f"i2cset -y 1 0x50 {str(i_hex)} 0x00", stdout=subprocess.PIPE, shell=True)
